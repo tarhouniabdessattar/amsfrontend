@@ -1,0 +1,30 @@
+h1{
+    color:red
+}
+
+.c1{
+    color:blue
+}
+
+.c2{
+    color:green
+}
+
+.custom-box {
+  font-family: 'Roboto Slab', serif;
+  color: #2e8b57; /* vert élégant */
+  font-style: italic;
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  padding: 12px 20px;
+  background-color: #f6fff6; /* vert très pâle */
+  box-shadow: 0 2px 6px rgba(46, 139, 87, 0.2);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.custom-box:hover {
+  background-color: #e1f7e6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(46, 139, 87, 0.3);
+}
