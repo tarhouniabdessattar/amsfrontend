@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - master  # ou "master", adapte si ton repo utilise un autre nom
+      - master  # adapte selon la branche de déploiement
 
 jobs:
   build:
@@ -20,7 +20,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t tarhouni/ams-frontend .
+        run: docker build -t tarhouni/ams-frontend:latest .
 
       - name: Push Docker image
-        run: docker push tarhouni/ams-frontend
+        run: docker push tarhouni/ams-frontend:latest
+
